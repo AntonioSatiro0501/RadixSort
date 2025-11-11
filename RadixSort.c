@@ -5,7 +5,6 @@
 int AuxiliarMerge[TAM_MAX_VETOR];
 
 void merge(int vetor[], int esquerda, int meio, int direita, int casaDecimal){
-    
     int i, j, k;
 
     for(i = meio + 1; i > esquerda; i-- ) AuxiliarMerge[i - 1] = vetor[i - 1];
@@ -22,7 +21,6 @@ void merge(int vetor[], int esquerda, int meio, int direita, int casaDecimal){
 }
 
 void mergeSort(int vetor[],int esquerda, int direita, int casaDecimal){
-
     int meio = (direita + esquerda) / 2;
     if (esquerda >= direita) return;
     mergeSort(vetor, esquerda, meio, casaDecimal);
